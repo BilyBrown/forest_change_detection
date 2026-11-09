@@ -21,7 +21,7 @@ Currently this project just includes a single notebook exploring the detection o
 
 I used Sentinel-2 L2A imagery from Earth Search to detect the 2024 St. Mary fire by comparing two summer windows (May 15 to July 31, 2024 vs. 2025). The windows cover the growing season and end before wildfire smoke becomes common. For each window I masked clouds and snow, computed the median NBR per pixel, and subtracted the two (dNBR). Areas where dNBR exceeds 0.2 and cover at least 1 acre were flagged as disturbance. The method also flags agricultural change in the valley, since crop rotation shows up the same way.
 
-![dNBR Plot](image.png)
+![dNBR Plot](./figures/image.png)
 
 **Known Issues**
 - Valley agriculture is flagged
